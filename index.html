@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUCING</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body id="app">
+   <nav>
+       <div class="wrapper">
+           <div class="logo"><a href=''>KUCING</a></div>
+           <div class="menu">
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="#karakteristik">Karakteristik</a></li>
+                   <li><a href="#jenis">Jenis</a></li>
+                   <li><a href="#foto">Foto</a></li>
+                   <li><a href="#contact">Contact</a></li>
+                  
+               </ul>
+           </div>
+       </div>
+   </nav> 
+   <div class="wrapper">
+       <!--untuk home--->
+    
+           
+           <div class="kolom1" v-for="data in articles">
+               <div class="foto">
+                <img :src="data.gambar"class="rounded" alt="kucingtekweb-removebg-preview" width="612" height="480">
+               </div>
+            <div class="cntent">
+                <p class="deskripsi">{{  data.thumbnail  }}</p>
+                <h2>{{  data.judul  }}</h2>
+                <p>{{ data.p1  }}</p>
+                <p>{{ data.p2  }}</p>
+                <p><a :href="'./hub.html?markdown=' + data.markdown" class="tbl-pink">Pelajari Lebih Lanjut</a></p>
+            </div>
+           </div>
+
+       
+       
+
+       <!--untuk jenis-->
+       <section id="jenis">
+           <div class="tengah">
+               <div class="kolom">
+                   <p class="deskripsi">Jenis</p>
+                   <h2>Jenis Kucing</h2>
+                   <p>Tertarik memelihara kucing? Ini adalah jenis-jenis kucing peliharaan populer yang bisa jadi pilihan untuk kamu yang pemula merawatnya di rumah</p>
+               </div>
+
+               <div class="jenis-list">
+                   <div class="kartu-jenis">
+                       <img src="assets/himalaya.jpg"/>
+                       <p>Ras Himalaya</p>
+                   </div>
+                   <div class="kartu-jenis">
+                        <img src="assets/munchkin.jpg"/>
+                        <p>Ras Munchkin</p>
+                    </div>
+                    <div class="kartu-jenis">
+                        <img src="assets/jawa.jpg"/>
+                        <p>Ras Jawa</p>
+                    </div>
+                    <div class="kartu-jenis">
+                        <img src="assets/persia.jpg"/>
+                        <p>Ras Persia</p>
+
+                    </div>
+               </div>
+           </div>
+       </section>
+
+       <!-- untuk foto-->
+       <section id="foto">
+           <div class="tengah">
+               <div class="kolom">
+                   <p class="deskripsi">Foto</p>
+                   <h2>Foto-Foto Kucing</h2>
+                    <p>Beberapa foto anak kucing ini bisa meningkatkan mood kamu loh >.<</p>
+                </div>
+
+                <div class="foto-list">
+                    <div class="kartu-foto">
+                        <img src="assets/cat1.jpg"/>
+                    </div>
+                    <div class="kartu-foto">
+                        <img src="assets/cat2.jpg"/>
+                    </div>
+                    <div class="kartu-foto">
+                        <img src="assets/cat3.jpg"/>
+                    </div>
+                    <div class="kartu-foto">
+                        <img src="assets/cat4.jpg"/>
+                    </div>
+                    <div class="kartu-foto">
+                        <img src="assets/cat5.jpg"/>
+                    </div>
+                </div>
+           </div>
+       </section>
+   </div>
+
+   <div id="contact">
+       <div class="wrapper">
+           <div class="footer">
+               <div class="footer-section">
+                   <h3>Source</h3>
+                   <p>https://id.wikipedia.org/wiki/Kucing</p>
+                   <p>https://www.kucingklik.com/kucing/</p>
+                   <p>https://wolipop.detik.com/home/</p>
+                   <p>pinterest</p>
+               </div>
+               <div class="footer-section">
+                <h3>About</h3>
+                <p>Nama saya Rengganis Pentagona Pertiwi dengan NIM 2000016121 Program Studi Sistem Informasi UAD. Ini adalah artikel pertama saya di kelas Teknologi Web Lanjut kelas A</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><a href="https://instagram.com/rengganispentagonaa">IG : rengganispentagonaa</a></p>
+                <p><a href="https://github.com/rengganisss">Github : rengganisss.github.io/tekweb2022/</a></p>
+            </div>
+           </div>
+       </div>
+   </div>
+
+   <div id="copyright">
+       <div class="wrapper">
+           &copy; 2022. <b>ArtikelKucing.</b> All Rights Reserved.
+       </div>
+   </div>
+
+
+
+   <script src="https://unpkg.com/vue@3"></script>
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
+   <script src="main.js"></script>
+
+</body>
+</html>
