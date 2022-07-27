@@ -2,10 +2,10 @@
 
 
 
-## ARTICLE
-### Menampilkan seluruh article
+## ARTIKEL
+### Menampilkan seluruh artikel
 ```
-GET: /article
+GET: /artikel
 
 response:
 [
@@ -23,9 +23,9 @@ response:
   }
 ]
 ```
-### Menampilkan article berdasarkan ```id```
+### Menampilkan artikel berdasarkan ```id```
 ```
-GET: /article/[id]
+GET: /artikel/[id]
 
 response:
 {
@@ -38,45 +38,45 @@ response:
     "markdown"  : ""
 }
 ```
-### Menambahkan article
+### Menambahkan artikel
 ```
-POST: /article
+POST: /artikel
 
 data:
 {
-    "gambar": "",
-    "thumbnail": "",
-    "judul": "",
-    "p1": "",
-    "p2": "",
-    "markdown": ""
+    "gambar"    : "",
+    "thumbnail" : "",
+    "judul"     : "",
+    "p1"        : "",
+    "p2"        : "",
+    "markdown"  : ""
 }
 
 response:
 true    //if true
 false   //if false
 ```
-### Mengubah article
+### Mengubah artikel
 ```
-PUT: /article
+PUT: /artikel
 
 data:
 {
-    "gambar": "",
-    "thumbnail": "",
-    "judul": "",
-    "p1": "",
-    "p2": "",
-    "markdown": ""
+    "gambar"    : "",
+    "thumbnail" : "",
+    "judul"     : "",
+    "p1"        : "",
+    "p2"        : "",
+    "markdown"  : ""
 }
 
 response:
 true    //if true
 false   //if false
 ```
-### Menghapus article
+### Menghapus artikel
 ```
-DELETE: /article
+DELETE: /artikel
 
 response:
 true    //if true
