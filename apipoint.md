@@ -84,4 +84,4 @@ false   //if false
 ```
 
 # DATABASE DESIGN
-![Design Database](...)
+![Design Database](https://raw.githubusercontent.com/rengganisss/tekweb2022/main/assets/design.png)
